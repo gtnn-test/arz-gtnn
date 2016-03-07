@@ -1,10 +1,14 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Газпром Трансгаз</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/arz_gtnn.css" %}"/>
 </head>
 <body>
+   <img src="{% static  "images/ShelepnevDV.jpg" %}" width="100px">
    {% block tratata %}
        Здравствуйте {{ user }}.
        {% if dol %}
